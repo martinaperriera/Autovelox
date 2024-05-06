@@ -6,11 +6,10 @@ import java.util.Scanner;
 public class Autovelox {
 
 	public static void main(String[] args) {
-		int limiteVelocità, velocitàRilevata, tolleranza, eccesso, sanzione;
+		int limiteVelocità, velocitàRilevata, tolleranza, eccesso, sanzione, numeroCasuale;
 		String risposta;
 		Scanner sc=new Scanner(System.in);
 		Random r=new Random(); // dichiaro un generatore di numeri casuali
-		
 		
 		System.out.println("Calcolo sanzioni autovelox\n\n");			//mostro il titolo e vado a capo 2 volte (\n)
 
@@ -30,6 +29,8 @@ public class Autovelox {
 			System.out.print("Inserire la velocità rilevata: "); 
 			velocitàRilevata=sc.nextInt(); 
 			sc.nextLine();
+			numeroCasuale=r.nextInt(100)+1; 
+			
 			
 		//
 			velocitàRilevata=r.nextInt();
